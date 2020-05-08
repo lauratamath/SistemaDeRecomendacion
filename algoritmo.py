@@ -1,8 +1,8 @@
 #Algoritmo relaciones
 #IDEALIZACION DE CODIGO RESPECTIVO UNION PYTHON - NEO4J
-#@author: Oliver de León
-#@author: Laura Tamath
-#@author: Julio Herrera
+# Julio Herrera       19402
+# Oliver de León      19270
+# Laura Tamath        19365
 #Retrieved from https://neo4j.com/developer/modeling-designs/
 
 
