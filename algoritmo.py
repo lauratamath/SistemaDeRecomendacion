@@ -1,6 +1,8 @@
 #Algoritmo relaciones
 #IDEALIZACION DE CODIGO RESPECTIVO UNION PYTHON - NEO4J
 #@author: Oliver de León
+#@author: Laura Tamath
+#@author: Julio Herrera
 #Retrieved from https://neo4j.com/developer/modeling-designs/
 
 
@@ -8,12 +10,12 @@
 db = GraphDatabase
 #Nodos caracteristicos
 caracteristica = db.labels.create("Caracteristica")
-#Almacena los posibles poliques
+#Almacena los posibles platos
 plato = db.labels.create("Plato")
 #Identifica que tan gourmet es
 gourmet = db.labels.create("Gourmet")
 
-#Nodes, posibles poliques
+#Nodes, posibles platos
 ajo= db.nodes.create(name="Ajo")
 Picante= db.nodes.create(name="Picante")
 Salado = db.nodes.create(name="Salado")
@@ -31,7 +33,7 @@ Agrio = db.nodes.create(name="Agrio")
 #Adding caracteristicas
 caracteristica.add(Merienda,Picante,Salado,Dulce,Postre,Barato,Desayuno,Almuerzo,Cena,Caro)
 
-#Generaring poliques
+#Generaring platos
 p1 = db.nodes.create(name="Ensalada", gourmet = "5")
 polique.add(p1)
 #Relaciones
@@ -40,7 +42,7 @@ Almuerzo.relationships.create(p1)
 Barato.relationships.create(p1)
 light.relationships.create(p1)
 
-#Generaring poliques
+#Generaring platos
 p2 = db.nodes.create(name="Caldo", gourmet = "8")
 polique.add(p2)
 #Relaciones
@@ -49,7 +51,7 @@ Almuerzo.relationships.create(p2)
 Salado.relationships.create(p2)
 
 
-#Generaring poliques
+#Generaring platos
 p3 = db.nodes.create(name="Spaguetti", gourmet = "7")
 polique.add(p3)
 #Relaciones
@@ -59,7 +61,7 @@ Salado.relationships.create(p3)
 Cena.relationships.create(p3)
 
 
-#Generaring poliques
+#Generaring platos
 p4 = db.nodes.create(name="Panqueques", gourmet = "10")
 polique.add(p4)
 #Relaciones
@@ -68,7 +70,7 @@ Cena.relationships.create(p4)
 Merienda.relationships.create(p4)
 Dulce.relationships.create(p4)
 
-#Generaring poliques
+#Generaring platos
 p5 = db.nodes.create(name="Pollo al limon", gourmet = "9")
 polique.add(p5)
 #Relaciones
